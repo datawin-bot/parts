@@ -43,7 +43,7 @@ if prompt:
 
         if matches:
             result_df = pd.DataFrame(matches)
-            st.session_state.messages.append({"role": "assistant", "content": "Here are some matching parts:"})
+            st.session_state.messages.append({"role": "assistant", "content": "Hi, Thanks for the Enquiry. Here are some matching parts:"})
             st.write(result_df)
         else:
             reply = "Sorry, I couldn't find any matching parts. Please try another keyword."
