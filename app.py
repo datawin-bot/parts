@@ -2,13 +2,13 @@
 import streamlit as st
 import pandas as pd
 
-st.title("PK's Parts Chatbot")
+st.title("Parts Chatbot")
 
 # Load data
 df = pd.read_excel("parts.xlsx")
 
 # Search box
-query = st.text_input("Hello, Welcome.  Please Enter part number or description:")
+query = st.text_input("Enter part number or description:")
 
 # Show results
 if query:
